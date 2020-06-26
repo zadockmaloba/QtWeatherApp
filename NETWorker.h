@@ -6,14 +6,13 @@
 #define ERRLOG(x) std::cout<<"[ERROR] "<<x<<std::endl;
 #endif // !LOG(x)
 
-
 class NETWorker : public QObject
 {
 	Q_OBJECT
 public:
 	NETWorker(std::string cityName);
 	~NETWorker();
-	size_t netCallback();
+	static size_t netCallback(char* contents, size_t size, size_t numMemb, void *user);
 
 private:
 	std::string searchToken;
