@@ -6,10 +6,11 @@
 #include <curlpp/Option.inl>
 #include <curlpp/Options.hpp>
 #include <sstream>
-#include "qtweatherapp.h"
+#include <iostream>
 
 class NETcurl : public QObject
 {
+	Q_OBJECT
 public:
 	NETcurl(std::string city = "nairobi");
 	~NETcurl();
@@ -20,5 +21,5 @@ private:
 	cURLpp::Easy easeyHandle;
 	const char zURL[45] = "http://www.meteo.go.ke/pages/fetch.php?town=";
 	std::ostringstream pagecontents;
-	std::string minTemp, maxTemp, cloudCover;
+	std::string minTemp="", maxTemp="", cloudCover="", town="";
 };

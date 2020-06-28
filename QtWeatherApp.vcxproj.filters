@@ -55,12 +55,12 @@
     <QtMoc Include="NETWorker.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="NETcurl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataBase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NETcurl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

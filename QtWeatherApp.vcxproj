@@ -106,7 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataBase.h" />
-    <ClInclude Include="NETcurl.h" />
+    <QtMoc Include="NETcurl.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
